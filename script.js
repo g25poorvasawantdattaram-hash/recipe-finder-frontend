@@ -1,6 +1,6 @@
 async function searchRecipes() {
   const ingredient = document.getElementById('search').value;
-  const response = await fetch(`https://recipe-finder-backend-y6vy.onrender.com?ingredient=${ingredient}`);
+  const response = await fetch(`https://recipe-finder-backend-y6vy.onrender.com/api/recipes?ingredient=${ingredient}`);
   const data = await response.json();
 
   const list = document.getElementById('recipe-list');
